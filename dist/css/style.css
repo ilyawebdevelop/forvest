@@ -676,7 +676,7 @@ button.swiper-pagination-bullet {
   --container-offset: 15px;
   --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
   --container-fluid-width: calc(var(--content-fluid-width) + (var(--container-offset) * 2));
-  --font-family: "poppins", sans-serif;
+  --font-family: "Open Sans", sans-serif;
   --outline: #e3ebf2;
   --main-color: #08141f;
   --black: #000;
@@ -5099,12 +5099,16 @@ html.with-fancybox body.hide-scrollbar {
   column-gap: 20px;
   justify-content: space-between;
 }
+.utilItem:hover .utilItemName {
+  color: var(--orange);
+}
 .utilItem:not(:first-child) {
   padding-top: 18px;
 }
 .utilItemName {
   font-weight: 600;
   font-size: 18px;
+  transition: color 0.2s linear;
 }
 .utilItemPrice {
   display: flex;

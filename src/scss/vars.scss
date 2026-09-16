@@ -5,7 +5,7 @@
   --container-offset: 15px;
   --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
   --container-fluid-width: calc(var(--content-fluid-width) + (var(--container-offset) * 2));
-  --font-family: "poppins", sans-serif;
+  --font-family: "Open Sans", sans-serif;
   --outline: #e3ebf2;
   --main-color: #08141f;
   --black: #000;
@@ -14,6 +14,6 @@
   --error: #e02828;
   --orange: #f26b0b;
   --disabled: #c5cfdc;
-  --tetriary: #abc4e4; 
+  --tetriary: #abc4e4;
   --gray: #f7f7f8;
 }

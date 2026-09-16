@@ -24,6 +24,11 @@
     display: flex;
     column-gap: 20px;
     justify-content: space-between;
+    &:hover {
+      .utilItemName{
+        color: var(--orange);
+      }
+    }
     &:not(:first-child){
       padding-top: 18px;
     }
@@ -31,6 +36,7 @@
     &Name {
       font-weight: 600;
       font-size: 18px;
+      transition: color .2s linear;
     }
 
     &Price {

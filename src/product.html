@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/head.html',{
+"title":"Продукт"
+})
+
+<body>
+
+	<div class="wrapper">
+		@@include('html/header.html',{})
+		<main class="main">
+			@@include('html/breadcrumbs.html',{})
+			@@include('html/product/intro.html',{})
+			@@include('html/product/fraction.html',{})
+			@@include('html/product/params.html',{})
+			@@include('html/product/delivery.html',{})
+			@@include('html/adv.html',{})
+			@@include('html/product/content.html',{})
+			@@include('html/product/related.html',{})
+			@@include('html/faq.html',{})
+			@@include('html/product/order-form.html',{})
+		</main>
+		@@include('html/footer.html',{})
+		@@include('html/modal.html',{})
+	</div>
+
+	<script src="js/app.min.js"></script>
+
+
+
+</body>
+
+</html>

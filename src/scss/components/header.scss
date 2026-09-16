@@ -1,0 +1,137 @@
+// Header
+.header {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.07);
+  z-index: 1;
+  position: relative;
+
+  &Logo {
+    &:hover {
+      opacity: .85;
+    }
+
+    img {
+      width: 210px;
+    }
+  }
+
+  &W {
+    display: flex;
+    align-items: center;
+    column-gap: 50px;
+    justify-content: space-between;
+  }
+
+  .contacts {
+    display: flex;
+    flex-direction: column;
+
+    .phone {
+      font-size: 18px;
+      padding-left: 30px;
+      background: url('@img/icons/phone-orange.svg') no-repeat left center / 20px;
+      font-weight: 400;
+
+      &:hover {
+        color: var(--orange);
+      }
+    }
+
+    .work-time {
+      font-size: 14px;
+      color: #767781;
+      padding-left: 30px;
+    }
+  }
+
+  &Nav {
+    ul {
+      display: flex;
+      column-gap: 30px;
+
+      li {
+        &.menu-item-has-children {
+          position: relative;
+
+          &>a {
+            padding-right: 20px;
+            background-image: url('@img/icons/arrow-down.svg');
+            background-position: right center;
+            background-repeat: no-repeat;
+            background-size: 12px;
+            transition: color .2s linear, background-image .2s linear;
+
+          }
+
+          &:hover {
+            &>a {
+              background-image: url('@img/icons/arrow-up-orange.svg');
+              color: var(--orange);
+            }
+
+            .sub-menu {
+              display: block;
+            }
+          }
+        }
+
+        a {
+          font-size: 14px;
+          text-transform: uppercase;
+
+          &:hover {
+            color: var(--orange);
+          }
+        }
+      }
+    }
+
+    .sub-menu {
+      display: none;
+      position: absolute;
+      top: 100%;
+      width: 250px;
+      padding: 20px 15px;
+      // background-color: #edf1f5;
+      border-radius: 16px;
+      box-shadow: 0 0 30px 0 rgba(8, 20, 31, 0.1);
+      background-color: #fff;
+    }
+  }
+}
+
+.headerAction {
+  position: relative;
+  z-index: 1;
+  .container {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+  &W {
+    display: flex;
+    justify-content: flex-end;
+    border-radius: 0 0 10px 10px;
+    padding: 0 20px 0px;
+    background: #fff;
+    width: fit-content;
+    margin-left: auto;
+    padding-right: 0;
+    position: absolute;
+    right: 0;
+  }
+
+  a {
+    padding-left: 29px;
+    background: url('@img/icons/doc.svg') no-repeat left top 6px / 17px;
+    padding-top: 4px;
+    padding-left: 28px;
+    padding-bottom: 16px;
+    padding-right: 20px;
+    &:hover {
+      color: var(--orange);
+    }
+  }
+}

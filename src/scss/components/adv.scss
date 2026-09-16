@@ -1,0 +1,58 @@
+.adv {
+  &Item {
+    display: flex;
+    column-gap: 20px;
+    align-items: flex-start;
+    position: relative;
+    max-width: 330px;
+
+    &:not(:last-child) {
+      &::after {
+        content: "";
+        position: absolute;
+
+        /* Ставим линию ровно по центру 100-пиксельного зазора */
+        /* -50px назад от правого края текущей колонки */
+        right: -40px;
+        top: 50%;
+        transform: translateY(-50%);
+        /* Центрируем по вертикали */
+
+        width: 1px;
+        height: 105px;
+        /* Высота вашей палочки по макету */
+        background-color: rgba(8, 20, 31, 0.07);
+        /* Светло-серый цвет разделителя */
+      }
+    }
+
+
+
+    &Title {
+      font-size: 20px;
+      line-height: 120%;
+      font-weight: 600;
+    }
+
+    &Descr {
+      color: #767781;
+    }
+
+    &Icon {
+      width: 48px;
+    }
+
+    &Content {
+      display: flex;
+      flex-direction: column;
+      row-gap: 10px;
+    }
+  }
+
+  .sep {
+    height: 100%;
+    width: 1px;
+    background-color: rgba(8, 20, 31, 0.07);
+    grid-column: auto;
+  }
+}

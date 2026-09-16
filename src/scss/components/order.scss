@@ -1,0 +1,62 @@
+.order {
+
+  &-bg {
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-repeat: no-repeat;
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0;
+      background: rgba(0, 0, 0, 0.4);
+    }
+
+    .socials {
+      ul {
+        li {
+          &:first-child {
+            a {
+              padding-left: 26px;
+              padding-right: 26px;
+              min-width: 215px;
+            }
+          }
+          a {
+            border: 1px solid #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-left: 16px;
+            padding-right: 16px;
+            height: 56px;
+            border-radius: 6px;
+            color: #fff;
+            column-gap: 10px;
+            font-weight: 500;
+            img {
+              transition: transform .2s linear;
+            }
+            &:hover {
+              img {
+                transform: scale(1.15);
+              }
+            }
+          }
+        }
+      }
+    }
+    .formInput {
+      width: 215px;
+    }
+  }
+
+  .container {
+    position: relative;
+    z-index: 1;
+  }
+}

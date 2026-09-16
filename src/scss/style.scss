@@ -1,0 +1,44 @@
+// стили для свайпера
+@import "../../node_modules/swiper/swiper-bundle.min";
+
+// Базовые подключения
+@import 'vars';
+@import 'mixins';
+@import 'fonts';
+@import 'reset';
+@import 'specifications';
+
+// fancybox
+@import './fancybox';
+
+// air datepicker
+@import "../../node_modules/air-datepicker/air-datepicker";
+
+// Подключения компонентов страницы
+@import "./components/btn";
+@import "./components/breadcrumbs";
+@import "./components/burger";
+@import "./components/modal";
+@import "./components/grid";
+@import "./components/tabs";
+@import "./components/header";
+@import "./components/socials";
+@import "./components/intro";
+@import "./components/cat";
+@import "./components/popular";
+@import "./components/card";
+@import "./components/adv";
+@import "./components/util";
+@import "./components/num";
+@import "./components/gal";
+@import "./components/about";
+@import "./components/order";
+@import "./components/contacts";
+@import "./components/product";
+@import "./components/acordion";
+@import "./components/calc-rent";
+@import "./components/spec-params";
+
+
+
+@import "./components/footer";

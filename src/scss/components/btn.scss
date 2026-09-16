@@ -1,0 +1,101 @@
+// btn
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  transition: background-color .2s linear, color .2s linear;
+  column-gap: 10px;
+  border-radius: 6px;
+  height: 56px;
+  font-weight: 500;
+  padding-left: 26px;
+  padding-right: 26px;
+  cursor: pointer;
+
+  &--orange {
+    background-color: var(--orange);
+    color: #fff;
+
+    &:hover {
+      background-color: #d95f0a;
+    }
+  }
+
+  &--gray-transparent {
+    background-color: transparent;
+    border: 1px solid rgba(8, 20, 31, 0.2);
+
+    &:hover {
+      color: #fff;
+      background-color: rgba(8, 20, 31, 0.2);
+    }
+    svg {
+      fill: var(--orange);
+    }
+  }
+
+  &--white-transparent {
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+
+  }
+
+  &.h-50 {
+    height: 50px;
+  }
+
+  svg {
+    width: 16px;
+    height: 16px;
+  }
+}
+
+.introBtn {
+  svg {
+    fill: #000;
+  }
+}
+
+.catCardLink {
+  color: #F26B0B;
+  margin-top: auto;
+  column-gap: 10px;
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  transition: color .2s linear;
+
+  &:hover {
+    color: var(--main-color);
+
+    svg {
+      fill: var(--main-color);
+    }
+  }
+
+  svg {
+    width: 16px;
+    height: 16px;
+    fill: #F26B0B;
+    transition: fill .2s linear, color .2s linear;
+  }
+}
+
+
+
+.productActionBtn {
+  border: 1px solid rgba(8, 20, 31, 0.2);
+  border-radius: 6px;
+  padding: 16px 26px;
+  font-weight: 500;
+
+  &:hover {
+    background-color: rgba(8, 20, 31, 0.2);
+  }
+
+  img {
+    width: 22px;
+  }
+}

@@ -1,0 +1,54 @@
+.cat {
+  &--main {
+    margin-top: -220px;
+    position: relative;
+    z-index: 1;
+  }
+  &Card {
+    box-shadow: 0 0 30px 0 rgba(8, 20, 31, 0.1);
+    background: #fff;
+    border-radius: 16px;
+    display: flex;
+    column-gap: 20px;
+    padding: 20px;
+    transition: box-shadow .2s linear;
+
+    &:hover {
+      box-shadow: 0 20px 30px 0 rgba(8, 20, 31, 0.1);
+
+      .catCardTitle {
+        color: var(--orange);
+      }
+
+      .catCardLink {
+        color: var(--main-color);
+
+        svg {
+          fill: var(--main-color);
+        }
+      }
+    }
+
+    &Img {
+      width: 235px;
+      flex-shrink: 0;
+      border-radius: 8px;
+      height: 250px;
+    }
+
+    &Content {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &Title {
+      margin-bottom: 20px;
+      transition: color .2s linear;
+    }
+
+    &Descr {
+      color: #767781;
+      margin-bottom: 20px;
+    }
+  }
+}

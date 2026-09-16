@@ -1,0 +1,81 @@
+// Footer
+.footer {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background-color: #18222c;
+  &Logo {
+    &:hover {
+      opacity: .85;
+    }
+    img {
+      width: 212px;
+    }
+  }
+
+  &Nav {
+    ul {
+      li {
+        margin-bottom: 15px;
+
+        a {
+          font-size: 14px;
+          text-transform: uppercase;
+          color: #fff;
+
+          &:hover {
+            color: var(--orange);
+          }
+        }
+      }
+    }
+  }
+
+  .socials {
+    ul {
+      li {
+        a {
+          border-radius: 6px;
+          display: flex;
+          border: 1px solid rgba(255, 255, 255, 0.2);
+          width: 50px;
+          height: 50px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          transition: border-color .2s linear;
+
+          &:hover {
+            border-color: #fff;
+          }
+
+          img {
+            width: 22px;
+          }
+        }
+      }
+    }
+  }
+
+  &Phone {
+    font-size: 18px;
+
+    &:hover {
+      color: var(--orange);
+    }
+  }
+}
+
+.footerW {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  column-gap: 50px;
+
+  .col {
+    grid-column: 2 span;
+  }
+}
+
+.develop {
+  display: flex;
+  column-gap: 5px;
+}

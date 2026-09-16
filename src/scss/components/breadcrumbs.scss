@@ -1,0 +1,33 @@
+.breadcrumbs {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background: linear-gradient(180deg, #f7f7f8 0%, #fff 100%);
+}
+.aioseo-breadcrumbs {
+  font-size: 14px;
+  color: #767781;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+  -webkit-column-gap: 12px;
+  -moz-column-gap: 12px;
+  column-gap: 12px;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.aioseo-breadcrumbs a {
+  -webkit-transition: color 0.2s linear;
+  -o-transition: color 0.2s linear;
+  transition: color 0.2s linear;
+}
+
+.aioseo-breadcrumbs a:hover {
+  color: #000;
+}
+.aioseo-breadcrumb-separator {
+  width: 3px;
+  height: 3px;
+  background-color: #767781;
+}

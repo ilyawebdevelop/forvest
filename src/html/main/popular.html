@@ -1,0 +1,84 @@
+<section class="popular sect pt-0">
+  <div class="container">
+    <div class="popularW">
+
+      <div class="popularL">
+        <div class="sectHead sectHead--flex">
+          <h2 class="h2">
+            Популярные материалы
+          </h2>
+          <a class="fw-medium text--orange" href="#">Вся продукция</a>
+        </div>
+        <div class="swiper popularSlider">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide popularSlide">
+              @@include('../catalog/pop-card.html',{})
+            </div>
+            <div class="swiper-slide popularSlide">
+              @@include('../catalog/pop-card-2.html',{})
+            </div>
+            <div class="swiper-slide popularSlide">
+              @@include('../catalog/pop-card-3.html',{})
+            </div>
+            <div class="swiper-slide popularSlide">
+              @@include('../catalog/pop-card-4.html',{})
+            </div>
+            
+            <div class="swiper-slide popularSlide">
+              @@include('../catalog/pop-card-5.html',{})
+            </div>
+              
+          </div>
+        </div>
+      </div>
+
+      <div class="popularForm">
+        <h3 class="mb-2">Рассчитаем стоимость материала с доставкой</h3>
+        <div class="text--gray mb-2">
+          Подберём нужный материал, рассчитаем объём и стоимость доставки
+        </div>
+        <div class="grid-12 gap-1 mb-1">
+          <div class="formSelect col-lg-6">
+            <select name="popmatherial" id="popmatherial">
+              <option value="1">Материал</option>
+              <option value="2">Бетон</option>
+              <option value="3">Гравий</option>
+              <option value="4">Щебень гранитный</option>
+              <option value="5">Щебень известняковый</option>
+              <option value="6">Песок строительный</option>
+            </select>
+          </div>
+          <div class="inputW col-lg-6">
+            <input type="text" class="formInput" placeholder="Объём, т или м³">
+          </div>
+        </div>
+        <div class="inputW mb-1">
+          <input type="text" class="formInput" placeholder="Адрес доставки">
+        </div>
+        <div class="grid-12 gap-1 mb-10">
+          <div class="inputW col-lg-6">
+            <input type="tel" class="formInput" placeholder="+7 (___) ___-__-__">
+          </div>
+          <button class="button button--orange h-50 col-lg-6 w-100">
+            Получить расчёт
+            <svg>
+              <use xlink:href="img/icons/icons.svg#arrow-btn"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="agreement text--gray">
+          <input id="popFormAgree" type="checkbox" hidden>
+          <label for="popFormAgree">
+            <div class="rect"></div>
+            <div class="agreementText">
+              Я соглашаюсь с <a href="#">Правилами обработки персональных данных</a> и <a href="#">Политикой
+                конфиденциальности</a>
+            </div>
+          </label>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>

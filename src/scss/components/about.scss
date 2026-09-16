@@ -1,0 +1,39 @@
+.about {
+  &Image {
+    img {
+      height: 470px;
+      width: 100%;
+      object-fit: cover;
+      border-radius: 16px;
+    }
+  }
+  &Descr {
+    font-size: 22px;
+    font-weight: 600;
+    max-width: 600px;
+    margin-bottom: 20px;
+  }
+  &Text {
+    max-width: 600px;
+    margin-bottom: 30px;
+  }
+  &Adv {
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+}
+.aboutAdv {
+  .advItem {
+    &:not(:last-child){
+      &::after {
+        height: 48px;
+        right: 6px;
+      }
+    }
+    .advItemContent {
+      row-gap: 0;
+    }
+  }
+}

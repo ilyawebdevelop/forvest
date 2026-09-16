@@ -1,0 +1,61 @@
+.accordion-item {
+  border: 1px solid rgba(8, 20, 31, 0.15);
+  margin-bottom: 4px;
+  height: fit-content;
+  border-radius: 10px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  &:has(.accordion-header.active) {
+    background-color: #fbfbfc;
+   
+  }
+}
+
+.accordion-header {
+  padding: 14px 20px 14px 20px;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: 10px;
+  transition: color .2s linear;
+  &:hover {
+    color: var(--orange);
+  }
+
+  &::after {
+    display: block;
+    content: '';
+    width: 12px;
+    height: 6px;
+    background: url('@img/icons/arrow-down.svg') no-repeat center center / 12px;
+
+  }
+
+  &.active {
+    &::after {
+      background: url('@img/icons/arrow-up.svg') no-repeat center center / 12px;
+    }
+  }
+}
+
+/* Скрываем контент по умолчанию */
+.accordion-content {
+  display: none;
+  padding: 5px 20px 14px 20px;
+  color: #767781;
+}
+
+.accordion-flex-container {
+  display: flex;
+  gap: 30px;
+  /* Отступ между левой и правой колонкой */
+}
+
+.accordion-column {
+  flex: 1;
+  /* Обе колонки будут строго одинаковой ширины (50% на 50%) */
+}

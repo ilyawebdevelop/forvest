@@ -1,0 +1,28 @@
+.num {
+  &Item {
+    height: fit-content;
+    &Count {
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 120%;
+      color: #f26b0b;
+      display: flex;
+      column-gap: 20px;
+
+      &::after {
+        display: flex;
+        content: '';
+        height: 100%;
+        width: 1px;
+        background-color: rgba(8, 20, 31, 0.1);
+
+      }
+    }
+
+    &Title {
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 120%;
+    }
+  }
+}

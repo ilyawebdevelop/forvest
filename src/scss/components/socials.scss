@@ -1,0 +1,16 @@
+.socials {
+  ul {
+    display: flex;
+    column-gap: 10px;
+    li {
+      a {
+        &:hover {
+          opacity: .85;
+        }
+        img {
+          width: 36px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,144 @@
+.intro {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  padding-bottom: 220px;
+
+  &Content {
+    max-width: 920px;
+  }
+
+  .container {
+    position: relative;
+    z-index: 1;
+  }
+
+  &Title {
+    font-weight: 700;
+    font-size: 52px;
+    line-height: 120%;
+    margin-bottom: 25px;
+  }
+
+  &Subtitle {
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    color: #767781;
+  }
+
+  &Descr {
+    font-size: 20px;
+    margin-bottom: 25px;
+    max-width: 645px;
+  }
+
+  &Btn {
+    &W {
+      display: flex;
+      column-gap: 20px;
+      margin-bottom: 50px;
+    }
+  }
+}
+
+.introBgLight {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 70%;
+  height: 100%;
+  object-position: right;
+  object-fit: cover;
+}
+
+.introAdv {
+  &Title {
+    font-weight: 700;
+  }
+
+  &Text {}
+
+  ul {
+    display: flex;
+    column-gap: 30px;
+
+    li {
+      display: flex;
+      column-gap: 15px;
+
+      img {
+        width: 32px;
+      }
+    }
+  }
+
+  .sep {
+    width: 1px;
+    height: 50px;
+    background-color: rgba(8, 20, 31, 0.1);
+  }
+}
+
+.introAdvContent {
+  display: flex;
+  flex-direction: column;
+}
+
+.introLogoStroi {
+  position: absolute;
+  right: 400px;
+  top: -14px;
+}
+
+.introSlide {
+  transition: opacity .2s linear;
+
+  &:hover {
+    opacity: .9;
+  }
+
+  img {
+    height: 540px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 16px;
+  }
+}
+
+.introSlider {
+  .navArrow {
+    width: fit-content;
+    height: fit-content;
+    border-color: transparent;
+    &:hover {
+      svg {
+        stroke: var(--orange);
+      }
+    }
+
+
+    svg {
+      stroke: #000;
+      stroke-width: 1px;
+      width: 17px;
+      height: 16px;
+    }
+  }
+
+  .navArrowW {
+    border-radius: 10px 10px 0 0;
+    padding: 10px 20px 0;
+    background: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 1;
+    width: fit-content;
+  }
+}
+.introSliderCount {
+  opacity: .9;
+}

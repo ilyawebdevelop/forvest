@@ -1,0 +1,87 @@
+.productCard {
+  padding: 10px 10px 15px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 16px;
+
+  &:hover {
+    .productCardImg {
+      opacity: .85;
+    }
+
+    .productCardTitle {
+      color: var(--orange);
+    }
+  }
+
+  &Img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: opacity .2s linear;
+
+    &--contain {
+      object-fit: contain;
+    }
+
+    &.h--140 {
+      height: 140px;
+    }
+
+    &.h--180 {
+      height: 180px;
+    }
+
+    &.h--220 {
+      height: 220px;
+    }
+
+    &.h--230 {
+      height: 230px;
+    }
+
+    &.h--240 {
+      height: 240px;
+    }
+  }
+
+  &Title {
+    font-size: 17px;
+    line-height: 120%;
+    font-weight: 600;
+    transition: color .2s linear;
+  }
+
+  &List {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 10px;
+
+    li {
+      background-color: #F4F6F8;
+      border-radius: 6px;
+      padding: 4px 8px;
+      color: rgba($color: #08141F, $alpha: .5);
+      font-size: 14px;
+    }
+  }
+
+  &.bg--white {
+    background-color: #fff;
+  }
+}
+
+.swiper-slide {
+  &:has(.productCard) {
+    height: auto;
+  }
+
+  .productCard {
+    height: 100%;
+  }
+}
+
+.tasksSlide,
+.portfSlide {
+  pointer-events: none;
+}

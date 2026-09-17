@@ -114,6 +114,15 @@ section {
 .fz-14 {
   font-size: 14px;
 }
+.fz-20 {
+  font-size: 20px;
+}
+.fz-24 {
+  font-size: 24px;
+}
+.fz-32 {
+  font-size: 32px;
+}
 
 .fw-medium {
   font-weight: 500;
@@ -267,6 +276,7 @@ h3,
     font-size: 22px;
   }
 }
+
 h4,
 .h4 {
   font-size: 24px;
@@ -290,7 +300,11 @@ a.text--orange {
     color: var(--main-color);
   }
 }
-
+.hover-orange {
+  &:hover {
+    color: var(--orange);
+  }
+}
 .text--white {
   color: #fff;
 }
@@ -322,12 +336,15 @@ a.text--white-50 {
 .bg--gray-2 {
   background-color: #F7F7F8;
 }
+
 .bg--gray-dark {
   background-color: var(--gray-dark);
 }
+
 .bg--orange-light {
   background-color: #fdf5ec;
 }
+
 .border--gray {
   border: 1px solid #ededf2;
 }
@@ -447,15 +464,23 @@ a.text--white-50 {
     }
   }
 }
+
 .p-30 {
   padding: 30px;
 }
+
 .p-40 {
   padding: 40px;
 }
+
+.rounded-10 {
+  border-radius: 10px;
+}
+
 .rounded-16 {
   border-radius: 16px;
 }
+
 .rounded-20 {
   border-radius: 20px;
 }
@@ -467,32 +492,40 @@ a.text--white-50 {
 
   .row {
     display: flex;
-    &:not(:last-child){
+
+    &:not(:last-child) {
       border-bottom: 2px solid #ededf2;
     }
-    &:nth-child(odd){
+
+    &:nth-child(odd) {
       background-color: #f7f7f8;
     }
+
     .col {
       padding: 10px;
-      &:nth-child(1){
+
+      &:nth-child(1) {
         width: 40%;
       }
-      &:nth-child(2){
+
+      &:nth-child(2) {
         width: 60%;
       }
-      &:not(:last-child){
-         border-right: 1px solid #ededf2;
+
+      &:not(:last-child) {
+        border-right: 1px solid #ededf2;
       }
     }
   }
 }
+
 .calendar {
   background-image: url('@img/icons/calendar.svg');
   background-repeat: no-repeat;
   background-size: 18px;
   background-position: right 15px center;
 }
+
 .h-100 {
   height: 100%;
 }

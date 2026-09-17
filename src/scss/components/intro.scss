@@ -111,6 +111,7 @@
     width: fit-content;
     height: fit-content;
     border-color: transparent;
+
     &:hover {
       svg {
         stroke: var(--orange);
@@ -139,6 +140,83 @@
     width: fit-content;
   }
 }
+
 .introSliderCount {
   opacity: .9;
+}
+
+.introAboutAdv {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 30px;
+}
+
+.introAboutAdvItem {
+  display: flex;
+  align-items: center;
+  column-gap: 15px;
+
+  &:not(:last-child) {
+    &::after {
+      content: '';
+      width: 1px;
+      height: 100%;
+      background-color: rgba($color: #08141F1A, $alpha: .11);
+      display: block;
+      margin-left: 15px;
+    }
+  }
+}
+
+.introAboutImage {
+  position: relative;
+
+  &>img {
+    height: 470px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 16px;
+  }
+}
+
+.card-blur {
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  padding: 15px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.05);
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.introAboutImageCard {
+  position: absolute;
+  max-width: 280px;
+
+  &L {
+    left: -50px;
+    bottom: 50px;
+  }
+
+  &R {
+    right: -50px;
+    top: 50px;
+  }
+}
+
+.introAboutImageCardIcon {
+  width: 32px;
+}
+
+.introAbout {
+  padding-bottom: 80px;
+
+  .breadcrumbs {
+    background: none;
+  }
+}
+
+.aboutContLogo {
+  width: 300px;
+  margin-left: auto;
+  margin-top: auto;
 }

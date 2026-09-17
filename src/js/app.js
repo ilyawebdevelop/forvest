@@ -340,3 +340,46 @@ $('.accordion-header').click(function () {
   // Переключаем (добавляем/удаляем) класс active на самом кликнутом заголовке
   $(this).toggleClass('active');
 });
+
+
+document.getElementById('copy-btn')?.addEventListener('click', function() {
+  const container = document.getElementById('requisites-table');
+  // Находим все строки внутри контейнера
+  const rows = container.querySelectorAll('.row');
+  let textToCopy = '';
+
+  rows.forEach(row => {
+    // Находим блок с названием (обычно он имеет класс text--gray)
+    const labelEl = row.querySelector('.col.text--gray');
+    // Находим блок со значением (вторая колонка .col)
+    const valueEl = row.querySelector('.col:not(.text--gray)');
+
+    if (labelEl && valueEl) {
+      const label = labelEl.innerText.trim();
+      const value = valueEl.innerText.trim();
+      textToCopy += `${label}: ${value}\n`;
+    }
+  });
+
+  // Копируем собранный текст в буфер обмена
+  navigator.clipboard.writeText(textToCopy.trim())
+    .then(() => {
+      // Анимация успешного копирования для кнопки
+      const originalText = this.innerText;
+      this.innerText = 'Скопировано!';
+      
+      // Добавляем класс успешного состояния, если он есть в ваших стилях,
+      // либо меняем цвет напрямую:
+      const originalBg = this.style.backgroundColor;
+      this.style.backgroundColor = '#4CAF50'; 
+
+      setTimeout(() => {
+        this.innerText = originalText;
+        this.style.backgroundColor = originalBg;
+      }, 2000);
+    })
+    .catch(err => {
+      console.error('Не удалось скопировать: ', err);
+      alert('Ошибка при копировании. Выделите текст вручную.');
+    });
+});

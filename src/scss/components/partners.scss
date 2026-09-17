@@ -1,0 +1,21 @@
+.partners {
+  &Grid {
+    display: grid;
+    grid-template-columns: repeat(15, 1fr);
+    gap: 60px;
+  }
+  &Item {
+    grid-column: 3 span;
+    position: relative;
+    &:not(:last-child){
+      &::after {
+        content: '';
+        width: 1px;
+        height: 100%;
+        position: absolute;
+        right: -25px;
+        background-color: rgba(8, 20, 31, 0.07);
+      }
+    }
+  }
+}

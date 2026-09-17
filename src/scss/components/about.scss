@@ -7,16 +7,19 @@
       border-radius: 16px;
     }
   }
+
   &Descr {
     font-size: 22px;
     font-weight: 600;
     max-width: 600px;
     margin-bottom: 20px;
   }
+
   &Text {
     max-width: 600px;
     margin-bottom: 30px;
   }
+
   &Adv {
     ul {
       display: flex;
@@ -24,16 +27,52 @@
     }
   }
 }
+
 .aboutAdv {
   .advItem {
-    &:not(:last-child){
+    &:not(:last-child) {
       &::after {
         height: 48px;
         right: 6px;
       }
     }
+
     .advItemContent {
       row-gap: 0;
     }
   }
+}
+
+.aboutContGalItem {
+  position: relative;
+  &Image {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+&:nth-child(3){
+  .card-blur {
+    right: 30px;
+    bottom: 30px;
+  }
+}
+  &.top-image {
+    grid-column: 1 / 3;
+    .card-blur {
+      top: 30px;
+      left: 30px;
+    }
+  }
+
+  .card-blur {
+    max-width: 230px;
+    position: absolute;
+  }
+}
+
+.aboutContGal {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: 10px;
 }

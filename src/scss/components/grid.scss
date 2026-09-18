@@ -9,8 +9,8 @@
   box-sizing: border-box;
 
   @media(max-width: 991px) {
-    column-gap: 8px;
-    row-gap: 8px;
+    column-gap: 10px;
+    row-gap: 10px;
   }
 }
 
@@ -245,6 +245,57 @@
   }
 }
 
+/* 🖥️ Большие экраны (Десктопы) — от 1400px (xxl) */
+@media (min-width: 1400px) {
+  .col-xxl-1 {
+    grid-column: span 1;
+  }
+
+  .col-xxl-2 {
+    grid-column: span 2;
+  }
+
+  .col-xxl-3 {
+    grid-column: span 3;
+  }
+
+  .col-xxl-4 {
+    grid-column: span 4;
+  }
+
+  .col-xxl-5 {
+    grid-column: span 5;
+  }
+
+  .col-xxl-6 {
+    grid-column: span 6;
+  }
+
+  .col-xxl-7 {
+    grid-column: span 7;
+  }
+
+  .col-xl-8 {
+    grid-column: span 8;
+  }
+
+  .col-xxl-9 {
+    grid-column: span 9;
+  }
+
+  .col-xxl-10 {
+    grid-column: span 10;
+  }
+
+  .col-xxl-11 {
+    grid-column: span 11;
+  }
+
+  .col-xxl-12 {
+    grid-column: span 12;
+  }
+}
+
 /* ==========================================================================
    ПОЛЕЗНЫЕ СЛУЖЕБНЫЕ КЛАССЫ (СМЕЩЕНИЯ И ВЫРАВНИВАНИЕ)
    ========================================================================== */
@@ -389,6 +440,26 @@
 .justify-between {
   justify-content: space-between !important;
 }
+
+/* 📟 Горизонт от 576px */
+@media (min-width: 576px) {
+  .justify-sm-start {
+    justify-content: start !important;
+  }
+
+  .justify-sm-center {
+    justify-content: center !important;
+  }
+
+  .justify-sm-end {
+    justify-content: end !important;
+  }
+
+  .justify-sm-between {
+    justify-content: space-between !important;
+  }
+}
+
 
 /* 📟 Горизонт от 768px */
 @media (min-width: 768px) {
@@ -660,9 +731,11 @@
 .mb-20 {
   margin-bottom: 20px;
 }
+
 .mb-25 {
   margin-bottom: 25px;
 }
+
 .mb-3 {
   margin-bottom: 24px !important;
 }
@@ -735,6 +808,13 @@
 
 .mt-auto {
   margin-top: auto;
+}
+
+.mx-sm-15 {
+  @media(max-width: 575px) {
+    margin-left: -10px;
+    margin-right: -10px;
+  }
 }
 
 /* Центрирование */
@@ -1058,9 +1138,11 @@
 .gap-4 {
   gap: 24px !important;
 }
+
 .gap-30 {
   gap: 30px;
 }
+
 .gap-5 {
   gap: 32px !important;
 }
@@ -1128,6 +1210,35 @@
    АДАПТИВНЫЙ GAP ДЛЯ БОЛЬШИХ ЭКРАНОВ (Breakpoints)
    ========================================================================== */
 
+/* Мобилки — от 576px (sm) */
+@media (min-width: 576px) {
+  .gap-sm-3 {
+    gap: 16px !important;
+  }
+
+  .gap-sm-4 {
+    gap: 24px !important;
+  }
+ .gap-sm-20 {
+    gap: 20px !important;
+  }
+  .gap-sm-5 {
+    gap: 32px !important;
+  }
+
+  .gap-sm-6 {
+    gap: 48px !important;
+  }
+
+  .gap-x-sm-4 {
+    column-gap: 24px !important;
+  }
+
+  .gap-x-sm-5 {
+    column-gap: 32px !important;
+  }
+}
+
 /* 📟 Планшеты и ноутбуки — от 768px (md) */
 @media (min-width: 768px) {
   .gap-md-3 {
@@ -1181,5 +1292,12 @@
 
   .gap-x-lg-6 {
     column-gap: 48px !important;
+  }
+}
+
+/* 📟 Планшеты и ноутбуки — от 768px (md) */
+@media (min-width: 1400px) {
+  .gap-xxl-6 {
+    gap: 48px !important;
   }
 }

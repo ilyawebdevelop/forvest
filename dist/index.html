@@ -70,10 +70,24 @@
               </div>
 
             </div>
-
           </li>
           <li class="menu-item-has-children">
             <a href="#">Услуги</a>
+            <div class="sub-menu-wrapper">
+              <div class="sub-menu-head">
+                <div class="sub-menu-nav">
+                  <ul class="sub-menu">
+                    <li><a href="#">Доставка</a></li>
+                    <li><a href="#">Погрузка</a></li>
+                    <li><a href="#">Земляные работы</a></li>
+                    <li><a href="#">Вывоз и утилизация мусора</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="menu-item-has-children">
+            <a href="#">Аренда техники</a>
             <div class="sub-menu-wrapper">
               <div class="sub-menu-head">
 
@@ -119,41 +133,25 @@
               </div>
 
             </div>
-
-          </li>
-          <li class="menu-item-has-children">
-            <a href="#">Аренда техники</a>
-            <div class="sub-menu-wrapper">
-              <div class="sub-menu-head">
-
-                <div class="sub-menu-nav">
-
-                  <ul class="sub-menu">
-                    <li><a href="#">Аренда погрузчика</a></li>
-                    <li><a href="#">Аренда экскаватора</a></li>
-                    <li><a href="#">Аренда погрузчика</a></li>
-                    <li><a href="#">Аренда экскаватора</a></li>
-                    <li><a href="#">Аренда погрузчика</a></li>
-                    <li><a href="#">Аренда экскаватора</a></li>
-                  </ul>
-                </div>
-
-              </div>
-
-
-            </div>
           </li>
           <li>
             <a href="#">Контакты</a>
           </li>
         </ul>
       </nav>
-      <div class="contacts">
+      <div class="contacts d-none d-lg-flex">
         <a class="phone" href="tel:89648610520">8 (964) 861-05-20</a>
         <span class="work-time">Пн-Вс: с 7:00 до 19:00</span>
       </div>
       <div class="socials">
         <ul>
+
+          <li class="d-block d-lg-none">
+            <a href="#" target="_blank" rel="nofollow">
+              <img src="img/icons/phone-orange-soc.svg" alt="icon">
+            </a>
+          </li>
+
           <li>
             <a href="#" target="_blank" rel="nofollow">
               <img src="img/admin/socials/tg.svg" alt="icon">
@@ -171,15 +169,20 @@
           </li>
         </ul>
       </div>
-      <button class="button button--orange" data-fancybox data-src="#modalOrder">
+      <button class="button button--orange d-none d-lg-flex" data-fancybox data-src="#modalOrder">
         Рассчитать стоимость
       </button>
+      <div class="hamburger" id="toggle">
+        <div class="top-bun"></div>
+        <div class="meat"></div>
+        <div class="bottom-bun"></div>
+      </div><!-- /Hamburger Menu -->
     </div>
 
 
   </div>
 </header>
-<div class="headerAction">
+<div class="headerAction d-none d-lg-block">
   <div class="container">
     <div class="headerActionW">
       <a href="#">Цены на материалы</a>
@@ -190,17 +193,18 @@
 
 </div>
 		<main class="main">
-			<section class="intro sect" style="background-image: url('img/admin/intro/image-1.jpg');">
+			<section class="intro sect overflow-hidden" style="background-image: url('img/admin/intro/image-1.jpg');">
   <img class="introBgLight" src="img/intro/intro-bg-light.svg" alt="bg">
   <div class="container">
     <img class="introLogoStroi" src="img/admin/intro/logo-stroi.svg" alt="logo">
     <div class="introContent">
       <div class="introSubtitle">надежный поставщик в Марий Эл</div>
       <h1 class="introTitle">
-        Строительные материалы и спецтехника с доставкой по Йошкар-Оле и Марий Эл
+        Строительные материалы и&nbsp;спецтехника с&nbsp;доставкой по&nbsp;Йошкар-Оле и&nbsp;Марий&nbsp;Эл
       </h1>
       <div class="introDescr">
-        Поставляем песок, щебень, бетон и ЖБИ. Предоставляем самосвалы, экскаваторы, краны и другую спецтехнику для
+        Поставляем песок, щебень, бетон и&nbsp;ЖБИ. Предоставляем самосвалы, экскаваторы, краны и&nbsp;другую
+        спецтехнику для
         строительных объектов.
       </div>
       <div class="introBtnW">
@@ -219,24 +223,24 @@
           <li>
             <img src="img/admin/intro/adv-1.svg" alt="icon">
             <div class="introAdvContent">
-              <div class="introAdvTitle">12+ лет</div>
-              <div class="introAdvText">на рынке</div>
+              <div class="introAdvTitle fz-sm-14">12+ лет</div>
+              <div class="introAdvText fz-sm-14">на рынке</div>
             </div>
           </li>
-          <li class="sep"></li>
+          <li class="sep d-none d-sm-block"></li>
           <li>
             <img src="img/admin/intro/adv-2.svg" alt="icon">
             <div class="introAdvContent">
-              <div class="introAdvTitle">Доставка</div>
-              <div class="introAdvText">и выгрузка</div>
+              <div class="introAdvTitle fz-sm-14">Доставка</div>
+              <div class="introAdvText fz-sm-14">и выгрузка</div>
             </div>
           </li>
-          <li class="sep"></li>
+          <li class="sep d-none d-sm-block"></li>
           <li>
             <img src="img/admin/intro/adv-3.svg" alt="icon">
             <div class="introAdvContent">
-              <div class="introAdvTitle">Для частных лиц</div>
-              <div class="introAdvText">и организаций</div>
+              <div class="introAdvTitle fz-sm-14">Для частных лиц</div>
+              <div class="introAdvText fz-sm-14">и организаций</div>
             </div>
           </li>
         </ul>
@@ -247,7 +251,7 @@
 			<section class="cat cat--main sect">
   <div class="container">
     <div class="catList grid-12">
-      <div class="col-md-6 col-lg-4">
+      <div class="col-lg-6 col-xxl-4">
         <a href="#" class="catCard">
           <img src="img/admin/cats/image-1.jpg" alt="image" class="catCardImg">
           <div class="catCardContent">
@@ -264,7 +268,7 @@
           </div>
         </a>
       </div>
-      <div class="col-md-6 col-lg-4">
+      <div class="col-lg-6 col-xxl-4">
         <a href="#" class="catCard">
           <img src="img/admin/cats/image-2.jpg" alt="image" class="catCardImg">
           <div class="catCardContent">
@@ -281,7 +285,7 @@
           </div>
         </a>
       </div>
-      <div class="col-md-6 col-lg-4">
+      <div class="col-lg-6 col-xxl-4">
         <a href="#" class="catCard">
           <img src="img/admin/cats/image-3.jpg" alt="image" class="catCardImg">
           <div class="catCardContent">
@@ -320,7 +324,7 @@
   <img src="img/admin/catalog/image-1.jpg" alt="image" class="productCardImg h--180 mb-15">
   <div class="productCardTitle mb-10">Песок строительный</div> 
   <div class="d-flex gap-1 justify-between align-center mt-auto">
-    <span>от 450 ₽/т</span>
+    <span class="fz-sm-14">от 450 ₽/т</span>
     <svg style="width: 16px; height: 16px; fill: var(--orange);">
       <use xlink:href="img/icons/icons.svg#arrow-btn"></use>
     </svg>
@@ -332,7 +336,7 @@
   <img src="img/admin/catalog/image-2.jpg" alt="image" class="productCardImg h--180 mb-15">
   <div class="productCardTitle mb-10">Щебень известняковый</div> 
   <div class="d-flex gap-1 justify-between align-center mt-auto">
-    <span>от 450 ₽/т</span>
+    <span class="fz-sm-14">от 450 ₽/т</span>
     <svg style="width: 16px; height: 16px; fill: var(--orange);">
       <use xlink:href="img/icons/icons.svg#arrow-btn"></use>
     </svg>
@@ -344,7 +348,7 @@
   <img src="img/admin/catalog/image-3.jpg" alt="image" class="productCardImg h--180 mb-15">
   <div class="productCardTitle mb-10">Щебень гранитный</div> 
   <div class="d-flex gap-1 justify-between align-center mt-auto">
-    <span>от 450 ₽/т</span>
+    <span class="fz-sm-14">от 450 ₽/т</span>
     <svg style="width: 16px; height: 16px; fill: var(--orange);">
       <use xlink:href="img/icons/icons.svg#arrow-btn"></use>
     </svg>
@@ -356,7 +360,7 @@
   <img src="img/admin/catalog/image-4.jpg" alt="image" class="productCardImg h--180 mb-15">
   <div class="productCardTitle mb-10">Гравий</div> 
   <div class="d-flex gap-1 justify-between align-center mt-auto">
-    <span>от 450 ₽/т</span>
+    <span class="fz-sm-14">от 450 ₽/т</span>
     <svg style="width: 16px; height: 16px; fill: var(--orange);">
       <use xlink:href="img/icons/icons.svg#arrow-btn"></use>
     </svg>
@@ -369,7 +373,7 @@
   <img src="img/admin/catalog/image-5.jpg" alt="image" class="productCardImg h--180 mb-15">
   <div class="productCardTitle mb-10">Бетон (всех марок)</div> 
   <div class="d-flex gap-1 justify-between align-center mt-auto">
-    <span>от 450 ₽/т</span>
+    <span class="fz-sm-14">от 450 ₽/т</span>
     <svg style="width: 16px; height: 16px; fill: var(--orange);">
       <use xlink:href="img/icons/icons.svg#arrow-btn"></use>
     </svg>
@@ -383,7 +387,7 @@
 
       <div class="popularForm">
         <h3 class="mb-2">Рассчитаем стоимость материала с доставкой</h3>
-        <div class="text--gray mb-2">
+        <div class="text--gray mb-2 fz-sm-14">
           Подберём нужный материал, рассчитаем объём и стоимость доставки
         </div>
         <div class="grid-12 gap-1 mb-1">
@@ -432,7 +436,7 @@
 </section>
 			<section class="special sect pt-0">
   <div class="container">
-    <div class="bg--gray-2 p-40 rounded-20">
+    <div class="bg--gray-2 p-40 p-sm-40-10 rounded-20 mx-sm-15">
       <div class="sectHead sectHead--flex">
         <h2 class="h2">
           Спецтехника для строительных и земляных работ
@@ -451,7 +455,7 @@
     <li>кузов 20 м³</li>
   </ul>
   <div class="d-flex gap-1 justify-between align-center mt-auto">
-    <span>от 3 000 ₽/ч</span>
+    <span class="fz-sm-14">от 3 000 ₽/ч</span>
     <svg style="width: 16px; height: 16px; fill: var(--orange);">
       <use xlink:href="img/icons/icons.svg#arrow-btn"></use>
     </svg>
@@ -467,7 +471,7 @@
     <li>кузов 20 м³</li>
   </ul>
   <div class="d-flex gap-1 justify-between align-center mt-auto">
-    <span>от 13 000 ₽/ч</span>
+    <span class="fz-sm-14">от 13 000 ₽/ч</span>
     <svg style="width: 16px; height: 16px; fill: var(--orange);">
       <use xlink:href="img/icons/icons.svg#arrow-btn"></use>
     </svg>
@@ -483,7 +487,7 @@
     <li>кузов 20 м³</li>
   </ul>
   <div class="d-flex gap-1 justify-between align-center mt-auto">
-    <span>от 3 000 ₽/ч</span>
+    <span class="fz-sm-14">от 3 000 ₽/ч</span>
     <svg style="width: 16px; height: 16px; fill: var(--orange);">
       <use xlink:href="img/icons/icons.svg#arrow-btn"></use>
     </svg>
@@ -495,7 +499,7 @@
   <img src="img/admin/catalog/car-4.png" alt="image" class="productCardImg productCardImg--contain h--180 mb-15">
   <div class="productCardTitle mb-10">Гусеничный экскаватор</div>
   <div class="d-flex gap-1 justify-between align-center mt-auto">
-    <span>от 3 000 ₽/ч</span>
+    <span class="fz-sm-14">от 3 000 ₽/ч</span>
     <svg style="width: 16px; height: 16px; fill: var(--orange);">
       <use xlink:href="img/icons/icons.svg#arrow-btn"></use>
     </svg>
@@ -507,7 +511,7 @@
   <img src="img/admin/catalog/car-5.png" alt="image" class="productCardImg productCardImg--contain h--180 mb-15">
   <div class="productCardTitle mb-10">Автокран STC300T5</div>
   <div class="d-flex gap-1 justify-between align-center mt-auto">
-    <span>от 3 000 ₽/ч</span>
+    <span class="fz-sm-14">от 3 000 ₽/ч</span>
     <svg style="width: 16px; height: 16px; fill: var(--orange);">
       <use xlink:href="img/icons/icons.svg#arrow-btn"></use>
     </svg>
@@ -519,7 +523,7 @@
   <img src="img/admin/catalog/car-6.png" alt="image" class="productCardImg productCardImg--contain h--180 mb-15">
   <div class="productCardTitle mb-10">Кран-манипулятор</div>
   <div class="d-flex gap-1 justify-between align-center mt-auto">
-    <span>от 3 000 ₽/ч</span>
+    <span class="fz-sm-14">от 3 000 ₽/ч</span>
     <svg style="width: 16px; height: 16px; fill: var(--orange);">
       <use xlink:href="img/icons/icons.svg#arrow-btn"></use>
     </svg>
@@ -535,7 +539,7 @@
     <li>кузов 20 м³</li>
   </ul>
   <div class="d-flex gap-1 justify-between align-center mt-auto">
-    <span>от 3 000 ₽/ч</span>
+    <span class="fz-sm-14">от 3 000 ₽/ч</span>
     <svg style="width: 16px; height: 16px; fill: var(--orange);">
       <use xlink:href="img/icons/icons.svg#arrow-btn"></use>
     </svg>
@@ -551,7 +555,7 @@
     <li>кузов 20 м³</li>
   </ul>
   <div class="d-flex gap-1 justify-between align-center mt-auto">
-    <span>от 13 000 ₽/ч</span>
+    <span class="fz-sm-14">от 13 000 ₽/ч</span>
     <svg style="width: 16px; height: 16px; fill: var(--orange);">
       <use xlink:href="img/icons/icons.svg#arrow-btn"></use>
     </svg>
@@ -567,7 +571,7 @@
     <li>кузов 20 м³</li>
   </ul>
   <div class="d-flex gap-1 justify-between align-center mt-auto">
-    <span>от 3 000 ₽/ч</span>
+    <span class="fz-sm-14">от 3 000 ₽/ч</span>
     <svg style="width: 16px; height: 16px; fill: var(--orange);">
       <use xlink:href="img/icons/icons.svg#arrow-btn"></use>
     </svg>
@@ -579,7 +583,7 @@
   <img src="img/admin/catalog/car-4.png" alt="image" class="productCardImg productCardImg--contain h--180 mb-15">
   <div class="productCardTitle mb-10">Гусеничный экскаватор</div>
   <div class="d-flex gap-1 justify-between align-center mt-auto">
-    <span>от 3 000 ₽/ч</span>
+    <span class="fz-sm-14">от 3 000 ₽/ч</span>
     <svg style="width: 16px; height: 16px; fill: var(--orange);">
       <use xlink:href="img/icons/icons.svg#arrow-btn"></use>
     </svg>
@@ -587,6 +591,7 @@
 </a>
           </div>
         </div>
+        <div class="swiper-pagination"></div>
       </div>
     </div>
   </div>
@@ -600,41 +605,41 @@
       </h2>
     </div>
 
-    <div class="grid-12 gap-6">
+    <div class="grid-12 gap-20 gap-xxl-6">
 
-      <div class="col-sm-6 col-md-4 col-lg-3 advItem">
+      <div class="col-sm-6 col-lg-4 col-xl-3 advItem">
         <img src="img/admin/adv/icon-1.svg" alt="icon" class="advItemIcon">
         <div class="advItemContent">
           <div class="advItemTitle">12+ лет работы</div>
-          <div class="advItemDescr">
+          <div class="advItemDescr fz-sm-14">
             Снабжаем строительные объекты Йошкар-Олы и Марий Эл
           </div>
         </div>
       </div>     
 
-      <div class="col-sm-6 col-md-4 col-lg-3 advItem">
+      <div class="col-sm-6 col-lg-4 col-xl-3 advItem">
         <img src="img/admin/adv/icon-2.svg" alt="icon" class="advItemIcon">
         <div class="advItemContent">
           <div class="advItemTitle">Материалы + техника</div>
-          <div class="advItemDescr">
+          <div class="advItemDescr fz-sm-14">
             Не нужно искать отдельно поставщика материала, машину и технику для разгрузки
           </div>
         </div>
       </div>    
-      <div class="col-sm-6 col-md-4 col-lg-3 advItem">
+      <div class="col-sm-6 col-lg-4 col-xl-3 advItem">
         <img src="img/admin/adv/icon-3.svg" alt="icon" class="advItemIcon">
         <div class="advItemContent">
           <div class="advItemTitle">Доставка и выгрузка</div>
-          <div class="advItemDescr">
+          <div class="advItemDescr fz-sm-14">
             Организуем доставку материала непосредственно на объект
           </div>
         </div>
       </div>     
-      <div class="col-sm-6 col-md-4 col-lg-3 advItem">
+      <div class="col-sm-6 col-lg-4 col-xl-3 advItem">
         <img src="img/admin/adv/icon-4.svg" alt="icon" class="advItemIcon">
         <div class="advItemContent">
           <div class="advItemTitle">Большие объёмы</div>
-          <div class="advItemDescr">
+          <div class="advItemDescr fz-sm-14">
             Работаем как с частными заказчиками, так и с крупными партиями
           </div>
         </div>
@@ -646,7 +651,7 @@
 </section>
 			<section class="util sect bg--gray-2">
   <div class="container">
-    <div class="grid-12 align-center gap-6">
+    <div class="grid-12 align-center gap-30 gap-lg-6">
       <div class="col-lg-6">
         <div class="utilImageW">
           <img src="img/admin/util/image-1.jpg" alt="image" class="utilImage">
@@ -733,12 +738,12 @@
       <h2 class="h2">
         Комплексное снабжение объекта
       </h2>
-      <span class="text--gray">✓ Закроем несколько задач одним заказом</span>
+      <span class="text--gray fz-sm-14">✓ Закроем несколько задач одним заказом</span>
     </div>
 
-    <div class="grid-12 gap-6 numList">
+    <div class="grid-12 gap-20 gap-lg-6 numList">
 
-      <div class="numItem col-sm-6 col-md-4 col-lg-3 d-flex gap-20">
+      <div class="numItem col-sm-6 col-md-4 col-lg-3 d-flex gap-15 gap-sm-20">
         <div class="numItemCount">
           01
         </div>
@@ -750,7 +755,7 @@
         </div>
       </div>
 
-      <div class="numItem col-sm-6 col-md-4 col-lg-3 d-flex gap-20">
+      <div class="numItem col-sm-6 col-md-4 col-lg-3 d-flex gap-15 gap-sm-20">
         <div class="numItemCount">
           02
         </div>
@@ -762,7 +767,7 @@
         </div>
       </div>
 
-      <div class="numItem col-sm-6 col-md-4 col-lg-3 d-flex gap-20">
+      <div class="numItem col-sm-6 col-md-4 col-lg-3 d-flex gap-15 gap-sm-20">
         <div class="numItemCount">
           03
         </div>
@@ -774,7 +779,7 @@
         </div>
       </div>
 
-      <div class="numItem col-sm-6 col-md-4 col-lg-3 d-flex gap-20">
+      <div class="numItem col-sm-6 col-md-4 col-lg-3 d-flex gap-15 gap-sm-20">
         <div class="numItemCount">
           04
         </div>
@@ -835,218 +840,12 @@
         </a>
 
       </div>
+      <div class="swiper-pagination"></div>
     </div>
 
   </div>
 </section>
-			<section class="about sect bg--gray-2">
-  <div class="container">
-    <div class="grid-12 gap-6">
-      <div class="col-lg-6">
-
-        <div class="sectHead">
-          <h2 class="h2">
-            О компании
-          </h2>
-        </div>
-
-        <div class="aboutDescr">
-          Форвест — снабжение строительных объектов с 2013 года
-        </div>
-        <div class="aboutText text--gray">
-          <p>
-            Мы поставляем строительные материалы, ЖБИ и предоставляем спецтехнику для частных и корпоративных заказчиков
-            в Йошкар-Оле и Республике Марий Эл. Сотрудничаем с проверенными производителями, имеем собственный парк
-            техники и обеспечиваем доставку в согласованные сроки.
-          </p>
-        </div>
-
-        <div class="aboutAdv grid-12 advGrid mb-40">
-
-          <div class="col-sm-6 col-md-4 advItem">
-            <img src="img/admin/adv/icon-5.svg" alt="icon" class="advItemIcon">
-            <div class="advItemContent">
-              <div class="advItemTitle">Надёжные</div>
-              <div class="advItemDescr">
-                поставки
-              </div>
-            </div>
-          </div>
-
-          <div class="col-sm-6 col-md-4 advItem">
-            <img src="img/admin/adv/icon-6.svg" alt="icon" class="advItemIcon">
-            <div class="advItemContent">
-              <div class="advItemTitle">Собственный</div>
-              <div class="advItemDescr">
-                автопарк
-              </div>
-            </div>
-          </div>
-
-          <div class="col-sm-6 col-md-4 col-lg-3 advItem">
-            <img src="img/admin/adv/icon-7.svg" alt="icon" class="advItemIcon">
-            <div class="advItemContent">
-              <div class="advItemTitle">Проверенные</div>
-              <div class="advItemDescr">
-                производители
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-        <a href="#" class="introBtn button button--orange">
-          Подробнее о компании
-          <svg>
-            <use xlink:href="img/icons/icons.svg#arrow-btn"></use>
-          </svg>
-        </a>
-
-      </div>
-      <div class="col-lg-6">
-        <div class="aboutImage">
-          <img src="img/admin/about/image-1.jpg" alt="image">
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-			<section class="reviews sect">
-  <div class="container">
-
-    <div class="sectHead">
-      <h2 class="h2">
-        Отзывы наших клиентов
-      </h2>
-    </div>
-    
-  </div>
-</section>
-			<section class="order order-bg sect" style="background-image: url('img/admin/order/home.jpg');">
-  <div class="container">
-    <div class="grid-12 gap-6">
-      <div class="col-lg-6">
-        <h2 class="h2 orderTitle text--white mb-20">
-          Не знаете, какой материал или техника нужны для вашего объекта?
-        </h2>
-        <div class="orderDescr text--white" style="max-width: 500px;">
-          Расскажите о задаче — рассчитаем объём, подберём транспорт и предложим оптимальный вариант.
-        </div>
-      </div>
-      <div class="col-lg-6">
-        <div class="orderForm">
-          <div class="d-flex mb-20 gap-10">
-            <div class="inputW">
-              <input type="tel" class="formInput formInput--h-56" placeholder="+7 (___) ___-__-__">
-            </div>
-            <button class="introBtn button button--orange">
-              Заказать расчёт
-              <svg>
-                <use xlink:href="img/icons/icons.svg#arrow-btn"></use>
-              </svg>
-            </button>
-          </div>
-          <div class="socials">
-            <ul>
-              <li>
-                <a href="#" target="_blank" rel="nofollow">
-                  <img src="img/admin/socials/max-white.svg" alt="icon" style="width: 22px;">
-                  Написать в Max
-                </a>
-              </li>
-              <li>
-                <a href="#" target="_blank" rel="nofollow">
-                  <img style="width: 22px;" src="img/admin/socials/tg-white.svg" alt="icon">
-                </a>
-              </li>
-              <li>
-                <a href="#" target="_blank" rel="nofollow">
-                  <img style="width: 22px;" src="img/admin/socials/wh-white.svg" alt="icon">
-                </a>
-              </li>
-            </ul>
-          </div>
-
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-			<section class="contacts sect">
-  <div class="container">
-    <div class="grid-12 gap-6">
-      <div class="col-lg-5">
-
-        <div class="sectHead">
-          <h2 class="h2">
-            Контакты
-          </h2>
-        </div>
-
-        <div class="contactsGrid grid-12 gap-0">
-          <div class="contactsItem col-lg-6">
-            <div class="d-flex flex-column mb-15">
-              <a class="phone" href="tel:88362457788">8 (8362) 45-77-88</a>
-              <span>Офис/факс</span>
-            </div>
-            <div class="d-flex flex-column mb-15">
-              <a class="phone" href="tel:88362457788">8 (964) 861-05-20</a>
-              <span>Стройматериалы</span>
-
-            </div>
-            <div class="d-flex flex-column">
-              <a class="phone" href="tel:88362457788">8 (8362) 51-05-20</a>
-              <span>Спецтехника</span>
-            </div>
-          </div>
-          <div class="contactsItem col-lg-6">
-            <div class="socials">
-              <a href="#" target="_blank" rel="nofollow" class="d-flex align-center gap-10 mb-15">
-                <img src="img/admin/socials/max.svg" alt="icon">
-                <span>Написать в Max</span>
-              </a>
-              <a href="#" target="_blank" rel="nofollow" class="d-flex align-center gap-10 mb-15">
-                <img src="img/admin/socials/tg.svg" alt="icon">
-                <span>Написать в Telegram</span>
-              </a>
-              <a href="#" target="_blank" rel="nofollow" class="d-flex align-center gap-10 mb-15">
-                <img src="img/admin/socials/wh.svg" alt="icon">
-                <span>Написать в WhatsApp</span>
-              </a>
-            </div>
-          </div>
-          <div class="contactsItem col-lg-6">
-            <div class="d-flex gap-3 align-center mb-15">
-              <img src="img/icons/time.svg" alt="icon">
-              <span>Пн-Вс: с 7:00 до 19:00</span>
-            </div>
-            <a class="d-flex gap-3 align-center mail" href="mailto:480100zz@mail.ru">
-              <img src="img/icons/mail-orange.svg" alt="icon">
-              480100zz@mail.ru
-            </a>
-          </div>
-          <div class="contactsItem col-lg-6">
-            <div class="d-flex gap-3 align-start mb-20" style="max-width: 260px;">
-              <img src="img/icons/place-orange.svg" alt="icon">
-              <span>г.Йошкар-Ола, ул.Ленинградская 2</span>
-            </div>
-            <a href="#" class="button button--orange" target="_blank">
-              Построить маршрут
-              <svg>
-                <use xlink:href="img/icons/icons.svg#arrow-btn"></use>
-              </svg>
-            </a>
-          </div>
-        </div>
-
-      </div>
-      <div class="col-lg-7">
-        <div class="map" id="map" data-center="[55.790153, 49.136723]" data-zoom="19">
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+			
 		</main>
 		<!-- Footer -->
 <footer class="footer" id="footer">
@@ -1069,18 +868,18 @@
         </nav>
       </div>
       <div class="col">
-        <a href="#" class="d-flex text--white gap-1 mb-15" download>
+        <a href="#" class="d-flex text--white gap-1 mb-15 justify-center justify-sm-start fz-sm-14" download>
           <img src="img/icons/doc-white.svg" alt="icon">
           <span>Цены на материалы</span>
         </a>
-        <a href="#" class="d-flex text--white gap-10" download>
+        <a href="#" class="d-flex text--white gap-10 justify-center justify-sm-start fz-sm-14" download>
           <img src="img/icons/doc-white.svg" alt="icon">
           <span>Цены на спецтехнику</span>
         </a>
       </div>
       <div class="col">
         <a href="tel:89648610520" class="footerPhone text--white">8 (964) 861-05-20</a>
-        <div class="text--white-50 mb-20 fz-14">
+        <div class="text--white-50 mb-20 fz-14 text-center text-sm-left">
           Пн-Вс: с 7:00 до 19:00
         </div>
         <div class="socials">
@@ -1104,11 +903,11 @@
         </div>
       </div>
       <div class="col">
-        <div class="text--white-50 fz-14 mb-15">
+        <div class="text--white-50 fz-14 mb-15 text-center text-sm-left">
           © 2017-2026. ООО "Форвест". Все права защищены
         </div>
-        <a class="text--white-50 mb-15 d-block fz-14" href="#">Политика конфиденциальности</a>
-        <a href="#" class="develop text--white-50 fz-14">
+        <a class="text--white-50 mb-15 d-block fz-14 text-center text-sm-left" href="#">Политика конфиденциальности</a>
+        <a href="#" class="develop text--white-50 fz-14 justify-center justify-sm-start">
           Разработка сайта —
           <img src="img/logo/qorix.svg" alt="logo">
         </a>

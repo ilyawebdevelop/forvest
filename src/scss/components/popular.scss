@@ -3,10 +3,17 @@
     display: flex;
     align-items: flex-end;
     column-gap: 30px;
+    @media(max-width: 1199px){
+      flex-direction: column;
+      row-gap: 20px;
+    }
   }
 
   &L {
     width: calc(100% - 555px);
+    @media(max-width: 1199px){
+      width: 100%;
+    }
   }
 
   &Form {
@@ -15,11 +22,54 @@
     border-radius: 16px;
     padding: 30px;
     background: #edf1f5;
+    @media(max-width: 1199px){
+      width: 100%;
+    }
+    @media(max-width: 767px){
+      padding: 20px;
+    }
   }
+
+  .swiper-wrapper {
+    @media(max-width: 1599px) {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      column-gap: 10px;
+      row-gap: 10px;
+    }
+  }
+
   &Slide {
     height: auto;
-    .productCard{
-      height: 100%;
+    &:last-child {
+      @media(max-width: 1199px){
+        display: none;
+      }
     }
+    
+    @media(max-width: 1599px){
+      margin-right: 0!important;
+      grid-column: 4 span;
+      width: 100%!important;
+    }
+    @media(max-width: 1199px){
+      grid-column: 3 span;
+    }
+    @media(max-width: 767px){
+      grid-column: 6 span;
+    }
+
+    .productCard {
+      height: 100%;
+      .productCardImg.h--180 {
+        @media(max-width: 1400px){
+          height: 150px;
+        }
+        @media(max-width: 575px){
+          height: 38vw;
+        }
+      }
+    }
+    
   }
 }

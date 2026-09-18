@@ -2,15 +2,17 @@
 .hamburger {
   align-self: center;
   flex-direction: column;
-  justify-content: space-between;
-  width: 18px;
-  height: 14px;
-  min-width: 15px;
-  margin-right: 0;
+  border-radius: 8px;
+  padding-top: 8.5px;
+  padding-bottom: 8.5px;
+  padding-right: 5.5px;
+  padding-left: 5.5px;
+  row-gap: 2px;
   cursor: pointer;
   position: relative;
   // transition: background 0.2s linear;  
   display: none;
+  background-color: var(--orange);
 
   @media (max-width: 991px) {
     display: flex;
@@ -19,14 +21,18 @@
 
 .hamburger div {
   align-self: flex-start;
-  height: 2px;
-  width: 100%;
-  background: #222;
+  height: 3px;
+  background: #fff;
   border-radius: 10px;
+  width: 19px;
 }
 
 .hamburger .meat {
   width: 100%;
+}
+
+.hamburger .bottom-bun {
+  width: 15px;
 }
 
 .top-bun.active,
@@ -34,4 +40,3 @@
 .bottom-bun.active {
   opacity: 0;
 }
-

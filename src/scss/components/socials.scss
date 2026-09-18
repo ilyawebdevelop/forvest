@@ -2,6 +2,9 @@
   ul {
     display: flex;
     column-gap: 10px;
+    @media(max-width: 575px){
+      column-gap: 5px;
+    }
     li {
       a {
         &:hover {
@@ -9,6 +12,9 @@
         }
         img {
           width: 36px;
+          @media(max-width: 575px){
+            width: 30px;
+          }
         }
       }
     }

@@ -12,6 +12,9 @@
   padding-left: 26px;
   padding-right: 26px;
   cursor: pointer;
+  @media(max-width: 767px){
+    height: 47px;
+  }
 
   &--orange {
     background-color: var(--orange);
@@ -49,6 +52,10 @@
   svg {
     width: 16px;
     height: 16px;
+    @media(max-width: 575px){
+      width: 14px;
+      height: 14px;
+    }
   }
 }
 
@@ -66,6 +73,9 @@
   align-items: center;
   font-weight: 500;
   transition: color .2s linear;
+  @media(max-width: 575px){
+    font-size: 14px;
+  }
 
   &:hover {
     color: var(--main-color);
@@ -80,6 +90,10 @@
     height: 16px;
     fill: #F26B0B;
     transition: fill .2s linear, color .2s linear;
+    @media(max-width: 575px){
+      width: 14px;
+      height: 14px;
+    }
   }
 }
 

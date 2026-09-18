@@ -30,6 +30,9 @@
 
     &.h--180 {
       height: 180px;
+      @media(max-width: 575px){
+        height: 41vw;
+      }
     }
 
     &.h--220 {
@@ -50,6 +53,12 @@
     line-height: 120%;
     font-weight: 600;
     transition: color .2s linear;
+    @media(max-width: 1599px){
+      font-size: 16px;
+    }
+    @media(max-width: 575px){
+      font-size: 15px;
+    }
   }
 
   &List {
@@ -63,6 +72,9 @@
       padding: 4px 8px;
       color: rgba($color: #08141F, $alpha: .5);
       font-size: 14px;
+      @media(max-width: 575px){
+        font-size: 12px;
+      }
     }
   }
 
@@ -84,4 +96,14 @@
 .tasksSlide,
 .portfSlide {
   pointer-events: none;
+}
+.productList {
+  .productCardImg.h--180 {
+    height: 280px;
+  }
+}
+.productList {
+  .productCard  {
+    height: 100%;
+  }
 }

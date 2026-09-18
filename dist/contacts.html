@@ -70,10 +70,24 @@
               </div>
 
             </div>
-
           </li>
           <li class="menu-item-has-children">
             <a href="#">Услуги</a>
+            <div class="sub-menu-wrapper">
+              <div class="sub-menu-head">
+                <div class="sub-menu-nav">
+                  <ul class="sub-menu">
+                    <li><a href="#">Доставка</a></li>
+                    <li><a href="#">Погрузка</a></li>
+                    <li><a href="#">Земляные работы</a></li>
+                    <li><a href="#">Вывоз и утилизация мусора</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="menu-item-has-children">
+            <a href="#">Аренда техники</a>
             <div class="sub-menu-wrapper">
               <div class="sub-menu-head">
 
@@ -119,41 +133,25 @@
               </div>
 
             </div>
-
-          </li>
-          <li class="menu-item-has-children">
-            <a href="#">Аренда техники</a>
-            <div class="sub-menu-wrapper">
-              <div class="sub-menu-head">
-
-                <div class="sub-menu-nav">
-
-                  <ul class="sub-menu">
-                    <li><a href="#">Аренда погрузчика</a></li>
-                    <li><a href="#">Аренда экскаватора</a></li>
-                    <li><a href="#">Аренда погрузчика</a></li>
-                    <li><a href="#">Аренда экскаватора</a></li>
-                    <li><a href="#">Аренда погрузчика</a></li>
-                    <li><a href="#">Аренда экскаватора</a></li>
-                  </ul>
-                </div>
-
-              </div>
-
-
-            </div>
           </li>
           <li>
             <a href="#">Контакты</a>
           </li>
         </ul>
       </nav>
-      <div class="contacts">
+      <div class="contacts d-none d-lg-flex">
         <a class="phone" href="tel:89648610520">8 (964) 861-05-20</a>
         <span class="work-time">Пн-Вс: с 7:00 до 19:00</span>
       </div>
       <div class="socials">
         <ul>
+
+          <li class="d-block d-lg-none">
+            <a href="#" target="_blank" rel="nofollow">
+              <img src="img/icons/phone-orange-soc.svg" alt="icon">
+            </a>
+          </li>
+
           <li>
             <a href="#" target="_blank" rel="nofollow">
               <img src="img/admin/socials/tg.svg" alt="icon">
@@ -171,15 +169,20 @@
           </li>
         </ul>
       </div>
-      <button class="button button--orange" data-fancybox data-src="#modalOrder">
+      <button class="button button--orange d-none d-lg-flex" data-fancybox data-src="#modalOrder">
         Рассчитать стоимость
       </button>
+      <div class="hamburger" id="toggle">
+        <div class="top-bun"></div>
+        <div class="meat"></div>
+        <div class="bottom-bun"></div>
+      </div><!-- /Hamburger Menu -->
     </div>
 
 
   </div>
 </header>
-<div class="headerAction">
+<div class="headerAction d-none d-lg-block">
   <div class="container">
     <div class="headerActionW">
       <a href="#">Цены на материалы</a>
@@ -419,18 +422,18 @@
         </nav>
       </div>
       <div class="col">
-        <a href="#" class="d-flex text--white gap-1 mb-15" download>
+        <a href="#" class="d-flex text--white gap-1 mb-15 justify-center justify-sm-start fz-sm-14" download>
           <img src="img/icons/doc-white.svg" alt="icon">
           <span>Цены на материалы</span>
         </a>
-        <a href="#" class="d-flex text--white gap-10" download>
+        <a href="#" class="d-flex text--white gap-10 justify-center justify-sm-start fz-sm-14" download>
           <img src="img/icons/doc-white.svg" alt="icon">
           <span>Цены на спецтехнику</span>
         </a>
       </div>
       <div class="col">
         <a href="tel:89648610520" class="footerPhone text--white">8 (964) 861-05-20</a>
-        <div class="text--white-50 mb-20 fz-14">
+        <div class="text--white-50 mb-20 fz-14 text-center text-sm-left">
           Пн-Вс: с 7:00 до 19:00
         </div>
         <div class="socials">
@@ -454,11 +457,11 @@
         </div>
       </div>
       <div class="col">
-        <div class="text--white-50 fz-14 mb-15">
+        <div class="text--white-50 fz-14 mb-15 text-center text-sm-left">
           © 2017-2026. ООО "Форвест". Все права защищены
         </div>
-        <a class="text--white-50 mb-15 d-block fz-14" href="#">Политика конфиденциальности</a>
-        <a href="#" class="develop text--white-50 fz-14">
+        <a class="text--white-50 mb-15 d-block fz-14 text-center text-sm-left" href="#">Политика конфиденциальности</a>
+        <a href="#" class="develop text--white-50 fz-14 justify-center justify-sm-start">
           Разработка сайта —
           <img src="img/logo/qorix.svg" alt="logo">
         </a>

@@ -5,6 +5,10 @@
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.07);
   z-index: 2;
   position: relative;
+  @media(max-width: 991px){
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
 
   &Logo {
     &:hover {
@@ -13,6 +17,15 @@
 
     img {
       width: 210px;
+      @media(max-width: 1599px){
+        width: 172px;
+      }
+      @media(max-width: 767px){
+        width: 122px;
+      }
+      @media(max-width: 349px){
+        width: 100px;
+      }
     }
   }
 
@@ -21,10 +34,25 @@
     align-items: center;
     column-gap: 50px;
     justify-content: space-between;
+    @media(max-width: 1599px){
+      column-gap: 25px;
+    }
+    @media(max-width: 1400px){
+      flex-wrap: wrap;
+      row-gap: 20px;
+    }
+    @media(max-width: 991px){
+      column-gap: 15px;
+      flex-wrap: nowrap;
+    }
+    .button {
+      @media(max-width: 1400px){
+        margin-left: auto;
+      }
+    }
   }
 
   .contacts {
-    display: flex;
     flex-direction: column;
 
     .phone {
@@ -47,10 +75,16 @@
 
   &Nav {
     position: relative;
+    @media(max-width: 991px){
+      display: none;
+    }
 
     &>ul {
       display: flex;
       column-gap: 30px;
+      @media(max-width: 1599px){
+        column-gap: 18px;
+      }
 
       &>li {
         display: flex;

@@ -67,32 +67,35 @@ let im = new Inputmask({
 
 im.mask(inputs);
 
-// Инициализация слайдера popularSlider
-document.querySelectorAll('.popularSlider').forEach(n => {
-  const mySwiperPopular = new Swiper(n, {
-    slidesPerView: 5,
-    spaceBetween: 10,
-    speed: 600,
-    autoplay: false,
-    breakpoints: {
-      0: {
-        slidesPerView: 1,
+const mediaQueryMin1200 = window.matchMedia('(min-width: 1200px)');
+if (mediaQueryMin1200.matches) {
+  // Инициализация слайдера popularSlider
+  document.querySelectorAll('.popularSlider').forEach(n => {
+    const mySwiperPopular = new Swiper(n, {
+      slidesPerView: 5,
+      spaceBetween: 10,
+      speed: 600,
+      autoplay: false,
+      breakpoints: {
+        0: {
+          slidesPerView: 1,
+        },
+        576: {
+          slidesPerView: 2,
+        },
+        768: {
+          slidesPerView: 3,
+        },
+        992: {
+          slidesPerView: 4,
+        },
+        1200: {
+          slidesPerView: 5,
+        },
       },
-      576: {
-        slidesPerView: 2,
-      },
-      768: {
-        slidesPerView: 3,
-      },
-      992: {
-        slidesPerView: 4,
-      },
-      1200: {
-        slidesPerView: 5,
-      },
-    },
+    });
   });
-});
+}
 
 // Инициализация слайдера specialSlider
 document.querySelectorAll('.specialSlider').forEach(n => {
@@ -100,21 +103,30 @@ document.querySelectorAll('.specialSlider').forEach(n => {
     slidesPerView: 6,
     spaceBetween: 10,
     speed: 600,
-    autoplay: true,
+    autoplay: {
+      delay: 5000, // Задержка между переключениями (в мс), по умолчанию 3000
+      disableOnInteraction: false, // НЕ отключать автоплей, если пользователь сам перелистнул слайд
+      pauseOnMouseEnter: true, // Поставить на паузу, когда на слайдер навели курсор мыши
+    },
+    pagination: {
+      el: n?.querySelector('.swiper-pagination'),
+      clickable: true,
+      type: 'bullets',
+    },
     breakpoints: {
       0: {
         slidesPerView: 2,
       },
-      576: {
+      768: {
         slidesPerView: 3,
       },
-      768: {
+      992: {
         slidesPerView: 4,
       },
-      992: {
+      1200: {
         slidesPerView: 5,
       },
-      1200: {
+      1400: {
         slidesPerView: 6,
       },
     },
@@ -132,8 +144,13 @@ document.querySelectorAll('.galSlider').forEach(n => {
       nextEl: n.closest('.sliderW')?.querySelector('.navArrowNext'),
       prevEl: n.closest('.sliderW')?.querySelector('.navArrowPrev'),
     },
+    pagination: {
+      el: n?.querySelector('.swiper-pagination'),
+      clickable: true,
+      type: 'bullets',
+    },
     breakpoints: {
-      576: {
+      0: {
         slidesPerView: 1,
       },
       768: {
@@ -342,7 +359,7 @@ $('.accordion-header').click(function () {
 });
 
 
-document.getElementById('copy-btn')?.addEventListener('click', function() {
+document.getElementById('copy-btn')?.addEventListener('click', function () {
   const container = document.getElementById('requisites-table');
   // Находим все строки внутри контейнера
   const rows = container.querySelectorAll('.row');
@@ -367,11 +384,11 @@ document.getElementById('copy-btn')?.addEventListener('click', function() {
       // Анимация успешного копирования для кнопки
       const originalText = this.innerText;
       this.innerText = 'Скопировано!';
-      
+
       // Добавляем класс успешного состояния, если он есть в ваших стилях,
       // либо меняем цвет напрямую:
       const originalBg = this.style.backgroundColor;
-      this.style.backgroundColor = '#4CAF50'; 
+      this.style.backgroundColor = '#4CAF50';
 
       setTimeout(() => {
         this.innerText = originalText;

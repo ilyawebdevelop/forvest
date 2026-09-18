@@ -4,6 +4,9 @@
     height: 475px;
     object-fit: cover;
     border-radius: 16px;
+    @media(max-width: 575px){
+      height: 60vw;
+    }
 
     &W {
       position: relative;
@@ -16,6 +19,15 @@
     left: -40px;
     bottom: -20px;
     width: 195px;
+
+    @media(max-width: 1400px) {
+      width: 150px;
+    }
+
+    @media(max-width: 991px) {
+      left: 0;
+      width: 105px;
+    }
   }
 
   &Item {
@@ -24,12 +36,19 @@
     display: flex;
     column-gap: 20px;
     justify-content: space-between;
+    @media(max-width: 575px){
+      column-gap: 15px;
+      padding-top: 12px;
+      padding-bottom: 12px;
+    }
+
     &:hover {
-      .utilItemName{
+      .utilItemName {
         color: var(--orange);
       }
     }
-    &:not(:first-child){
+
+    &:not(:first-child) {
       padding-top: 18px;
     }
 
@@ -37,12 +56,24 @@
       font-weight: 600;
       font-size: 18px;
       transition: color .2s linear;
+
+      @media(max-width: 1199px) {
+        font-size: 16px;
+      }
     }
 
     &Price {
       display: flex;
       align-items: center;
       column-gap: 20px;
+
+      @media(max-width: 1199px) {
+        font-size: 14px;
+      }
+
+      span {
+        white-space: nowrap;
+      }
     }
   }
 }

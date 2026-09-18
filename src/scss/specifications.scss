@@ -91,6 +91,9 @@ section {
 
   &--h-56 {
     height: 56px;
+    @media(max-width: 767px){
+      height: 47px;
+    }
   }
 }
 
@@ -178,10 +181,14 @@ section {
   min-height: 100%;
   position: relative;
   background-color: #fff;
+
 }
 
 .main {
   flex: 1 0 auto;
+    @media(max-width: 991px){
+    padding-top: 56px;
+  }
 }
 
 .footer {
@@ -432,6 +439,10 @@ a.text--white-50 {
   width: 52px;
   height: 52px;
   transition: border-color .2s linear;
+  @media(max-width: 575px){
+    width: 46px;
+    height: 46px;
+  }
 
   svg {
     fill: transparent;

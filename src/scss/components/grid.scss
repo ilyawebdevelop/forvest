@@ -296,6 +296,57 @@
   }
 }
 
+/* 🖥️ Большие экраны (Десктопы) — от 1600px (3xl) */
+@media (min-width: 1600px) {
+  .col-3xl-1 {
+    grid-column: span 1;
+  }
+
+  .col-3xl-2 {
+    grid-column: span 2;
+  }
+
+  .col-3xl-3 {
+    grid-column: span 3;
+  }
+
+  .col-3xl-4 {
+    grid-column: span 4;
+  }
+
+  .col-3xl-5 {
+    grid-column: span 5;
+  }
+
+  .col-3xl-6 {
+    grid-column: span 6;
+  }
+
+  .col-3xl-7 {
+    grid-column: span 7;
+  }
+
+  .col-3l-8 {
+    grid-column: span 8;
+  }
+
+  .col-3xl-9 {
+    grid-column: span 9;
+  }
+
+  .col-3xl-10 {
+    grid-column: span 10;
+  }
+
+  .col-3xl-11 {
+    grid-column: span 11;
+  }
+
+  .col-3xl-12 {
+    grid-column: span 12;
+  }
+}
+
 /* ==========================================================================
    ПОЛЕЗНЫЕ СЛУЖЕБНЫЕ КЛАССЫ (СМЕЩЕНИЯ И ВЫРАВНИВАНИЕ)
    ========================================================================== */
@@ -764,6 +815,18 @@
   margin-bottom: 70px;
 }
 
+.mb-lg-10 {
+  @media(max-width: 991px) {
+    margin-bottom: 10px;
+  }
+}
+
+.mb-lg-20 {
+  @media(max-width: 991px) {
+    margin-bottom: 20px;
+  }
+}
+
 /* Потоковые отступы по ВЕРТИКАЛИ (Сверху и Снизу одновременно) */
 .my-1 {
   margin-top: 8px !important;
@@ -941,6 +1004,25 @@
 }
 
 /* В столбик задом наперед */
+
+/* 📟 Направление от 576px (sm) */
+@media (min-width: 576px) {
+  .flex-sm-row {
+    flex-direction: row !important;
+  }
+
+  .flex-sm-column {
+    flex-direction: column !important;
+  }
+
+  .flex-sm-row-reverse {
+    flex-direction: row-reverse !important;
+  }
+
+  .flex-sm-column-reverse {
+    flex-direction: column-reverse !important;
+  }
+}
 
 /* 📟 Направление от 768px (md) */
 @media (min-width: 768px) {
@@ -1219,9 +1301,11 @@
   .gap-sm-4 {
     gap: 24px !important;
   }
- .gap-sm-20 {
+
+  .gap-sm-20 {
     gap: 20px !important;
   }
+
   .gap-sm-5 {
     gap: 32px !important;
   }
